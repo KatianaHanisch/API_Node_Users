@@ -28,8 +28,6 @@ export class MongoUpdateUserRepository implements IUpdateUserRepository {
       throw new Error("Não foi possível atualizar o usuário");
     }
 
-    const { _id, ...rest } = user;
-
-    return { id: _id.toHexString(), ...rest };
+    return MongoClient.convertMongoUserToUser(user);
   }
 }

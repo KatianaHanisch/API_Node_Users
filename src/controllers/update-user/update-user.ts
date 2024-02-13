@@ -22,7 +22,7 @@ export class UpdateUserController implements IController {
       }
 
       const allowedFieldsToUpdate: (keyof UpdateUserParams)[] = [
-        "fistName",
+        "firstName",
         "lastName",
         "password",
       ];

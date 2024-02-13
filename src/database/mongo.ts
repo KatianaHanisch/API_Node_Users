@@ -1,4 +1,13 @@
-import { MongoClient as Mongo, Db } from "mongodb";
+import { MongoClient as Mongo, Db, ObjectId } from "mongodb";
+import { User } from "../models/user";
+
+export interface MongoUser {
+  _id: ObjectId;
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+}
 
 export const MongoClient = {
   client: undefined as unknown as Mongo,
@@ -16,5 +25,10 @@ export const MongoClient = {
     this.db = db;
 
     console.log("Connected to Mongo");
+  },
+
+  async convertMongoUserToUser(mongoUser: MongoUser): Promise<User> {
+    const { _id, ...rest } = mongoUser;
+    return { id: _id.toHexString(), ...rest };
   },
 };

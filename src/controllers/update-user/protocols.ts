@@ -1,7 +1,7 @@
 import { User } from "../../models/user";
 
 export interface UpdateUserParams {
-  fistName?: string;
+  firstName?: string;
   lastName?: string;
   password?: string;
 }
