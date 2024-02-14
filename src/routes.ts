@@ -1,3 +1,4 @@
+import { MongoGetUserIdRepository } from "./repositories/get-user-id/mongo-get-user-id";
 import express from "express";
 
 import { GetUsersController } from "./controllers/get-users/get-users";
@@ -11,6 +12,7 @@ import { UpdateUserController } from "./controllers/update-user/update-user";
 
 import { MongoDeleteUserRepository } from "./repositories/delete-user/mongo-delete-user";
 import { DeleteUserController } from "./controllers/delete-user/delete-user";
+import { GetUserIdController } from "./controllers/get-user-id/get-user-id";
 
 const router = express.Router();
 
@@ -33,6 +35,19 @@ router.post("/user", async (req, res) => {
 
   const { body, statusCode } = await createUserController.handle({
     body: req.body,
+  });
+
+  res.status(statusCode).send(body);
+});
+
+router.get("/users/:id", async (req, res) => {
+  const mongoGetUserIdRepository = new MongoGetUserIdRepository();
+
+  const getUserIdController = new GetUserIdController(mongoGetUserIdRepository);
+
+  const { body, statusCode } = await getUserIdController.handle({
+    body: req.body,
+    params: req.params,
   });
 
   res.status(statusCode).send(body);
