@@ -2,20 +2,61 @@
 
 Esta API foi desenvolvida como um projeto educacional, com base em aulas online, com o propósito de aprimorar competências na área de desenvolvimento back-end.
 
-## Tecnologias utilizadas
+  ##  :pushpin: Índice 
+  
+* [Como rodar a aplicação](#arrow_forward-Como-rodar-a-aplicação)
+* [Variáveis de Ambiente](#clipboard-Variáveis-de-Ambiente)
+* [Tecnologias utilizadas](#heavy_check_mark-Tecnologias-utilizadas)
+* [Conceitos utilizados](#rocket-Conceitos-utilizados)
+* [Entidades](#wrench-Entidades)
+* [Rotas](#round-pushpin-Rotas)
+* [Arquitetura](#office-Arquitetura)
 
-- Node.js
-- TypeScript
-- Express
-- MongoDB
+## :arrow_forward: Como rodar a aplicação
 
-## Conceitos utilizados
+No terminal, clone o projeto: 
 
-- SOLID
-- Injeção de Dependência (Dependency Injection)
-- Repository Pattern
+```
+git clone https://github.com/KatianaHanisch/API_Node_Users
+```
 
-## Entidades
+Depois abra a pasta e instale as dependências do projeto, executando no terminal:
+
+```sh
+ yarn install
+```
+
+Após instalar as dependências, inicie a aplicação com:
+```sh
+ yarn start:dev
+```
+
+## :clipboard: Variáveis de Ambiente
+
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+
+`MONGODB_URL`
+
+`MONGODB_USERNAME`
+
+`MONGODB_PASSWORD`
+
+
+## :heavy_check_mark: Tecnologias utilizadas
+
+- ``Node.js``
+- ``TypeScript``
+- ``Express``
+- ``MongoDB``
+
+## :rocket: Conceitos utilizados
+
+- [``SOLID``](https://www.alura.com.br/artigos/solid)
+- [``Injeção de Dependência (Dependency Injection)``](https://medium.com/@eduardolanfredi/inje%C3%A7%C3%A3o-de-depend%C3%AAncia-ff0372a1672)
+- [``Repository Pattern``](https://renicius-pagotto.medium.com/entendendo-o-repository-pattern-fcdd0c36b63b)
+
+  
+## :wrench: Entidades
 
 <pre>
 User {
@@ -26,7 +67,7 @@ User {
   password: string;
 }</pre>
 
-## Rotas
+## :round_pushpin: Rotas
 
 - GET /users - retorna os usuários salvos no banco
 - POST /users - cria um usuário
@@ -34,6 +75,7 @@ User {
 - PATCH /users/:id - atualiza um usuário
 - DELETE /users/:id - deleta um usuário
 
-## Arquitetura
+
+##  :office: Arquitetura
 
 ![Arquitetura](https://imgur.com/k5mXFoZ.png)
