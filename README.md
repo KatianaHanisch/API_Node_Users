@@ -9,7 +9,7 @@ Esta API foi desenvolvida como um projeto educacional, com base em aulas online,
 * [Tecnologias utilizadas](#heavy_check_mark-Tecnologias-utilizadas)
 * [Conceitos utilizados](#rocket-Conceitos-utilizados)
 * [Entidades](#wrench-Entidades)
-* [Rotas](#round-pushpin-Rotas)
+* [Rotas](#round_pushpin-rotas)
 * [Arquitetura](#office-Arquitetura)
 
 ## :arrow_forward: Como rodar a aplicação
