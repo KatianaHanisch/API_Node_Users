@@ -35,7 +35,7 @@ Após instalar as dependências, inicie a aplicação com:
 
 ## :clipboard: Variáveis de Ambiente
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu **.env**
 
 `MONGODB_URL`
 
