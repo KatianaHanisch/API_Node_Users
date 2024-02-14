@@ -1,7 +1,5 @@
 # Users API
 
-Esta API foi desenvolvida como um projeto educacional, com base em aulas online, com o propósito de aprimorar competências na área de desenvolvimento back-end.
-
   ##  :pushpin: Índice 
   
 * [Como rodar a aplicação](#arrow_forward-Como-rodar-a-aplicação)
@@ -11,6 +9,9 @@ Esta API foi desenvolvida como um projeto educacional, com base em aulas online,
 * [Entidades](#wrench-Entidades)
 * [Rotas](#round_pushpin-rotas)
 * [Arquitetura](#office-Arquitetura)
+
+## :pencil: Descrição do Projeto
+Esta API foi desenvolvida como um projeto educacional, com base em aulas online, com o propósito de aprimorar competências na área de desenvolvimento back-end.
 
 ## :arrow_forward: Como rodar a aplicação
 
